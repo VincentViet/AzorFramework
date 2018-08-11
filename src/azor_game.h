@@ -1,5 +1,5 @@
 #pragma once
-#include "core/game.h"
+#include <azor/game.h>
 
 class AzorGame :public azor::Game
 {

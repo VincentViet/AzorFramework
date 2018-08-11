@@ -3,9 +3,6 @@
 
 using namespace azor;
 
-float vol = 0.5f;
-std::string test;
-
 AzorGame::AzorGame(const int width, const int height, const std::string& title)
 	: Game(width, height, title)
 {}
