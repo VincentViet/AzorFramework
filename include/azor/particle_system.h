@@ -1,6 +1,9 @@
-#pragma once
+#ifndef PARTICLE_SYSTEM_H
+#define PARTICLE_SYSTEM_H
+
 #include <vector>
 #include <string>
+#include <glm/glm.hpp>
 
 namespace azor
 {
@@ -41,3 +44,5 @@ namespace azor
 		void draw();
 	};
 }
+
+#endif //PARTICLE_SYSTEM_H

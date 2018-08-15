@@ -1,4 +1,6 @@
-#pragma once
+#ifndef RENDERER_H
+#define RENDERER_H
+
 #include <glm/glm.hpp>
 #include <string>
 #include "rectangle.h"
@@ -15,9 +17,11 @@ namespace azor
 	public:
 		static void initialize();
 		static void clean_up();
-		static void use_texture(const std::string& name);
-		static void draw(glm::vec2 position, glm::vec2 size, float rotate_angle, glm::vec3 color = glm::vec3(1, 1, 1));
-		static void draw(const Rectangle& rec, glm::vec2 position, glm::vec2 size, float rotate_angle, glm::vec3 color = glm::vec3(1, 1, 1));
-		static void draw_text(const std::string& text, const glm::vec2& position, float scale, const glm::vec3& font_color);
+		static void draw(const std::string& texture_name, glm::vec2 position, glm::vec2 size, float rotate_angle, glm::vec3 color = glm::vec3(255, 255, 255));
+		static void draw(const std::string& texture_name, const Rectangle& rec, glm::vec2 position, glm::vec2 size, float rotate_angle, glm::vec3 color = glm::vec3(255, 255, 255));
+		static void draw_text(const std::string& text, const std::string& font_name, const glm::vec2& position, glm::vec3 font_color);
+		static void draw_symbol(const std::string& symbol_name, unsigned amount, const glm::vec2& position, glm::vec3 font_color);
 	};
 }
+
+#endif // RENDERER_H

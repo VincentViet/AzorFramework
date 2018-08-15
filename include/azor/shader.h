@@ -1,5 +1,6 @@
-#pragma once
-#include <map>
+#ifndef SHADER_H
+#define SHADER_H
+
 #include <string>
 #include <glm/glm.hpp>
 
@@ -7,8 +8,6 @@ namespace azor
 {
   class Shader
   {
-  private:
-	 static std::map<std::string, unsigned> shader_storage_;
 
   public:
 	  Shader() = delete;
@@ -40,3 +39,5 @@ namespace azor
 		  use = false);
   };
 }
+
+#endif // SHADER_H

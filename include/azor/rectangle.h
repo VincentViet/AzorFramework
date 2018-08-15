@@ -1,4 +1,5 @@
-#pragma once
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
 namespace azor
 {
@@ -15,3 +16,5 @@ namespace azor
 	};
 
 }
+
+#endif // RECTANGLE_H

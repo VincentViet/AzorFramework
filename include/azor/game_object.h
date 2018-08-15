@@ -1,4 +1,6 @@
-#pragma once
+#ifndef GAME_OBJECT_H
+#define GAME_OBJECT_H
+
 #include <glm/glm.hpp>
 #include <string>
 
@@ -28,3 +30,5 @@ namespace azor
 		static bool aabb_circle_collision(GameObject& circle, GameObject& block);
 	};
 }
+
+#endif // GAME_OBJECT_H

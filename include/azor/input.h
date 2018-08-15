@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INPUT_H
+#define INPUT_H
+
 #include <string>
 #include <GLFW/glfw3.h>
 
@@ -36,3 +38,5 @@ namespace azor
 	  static bool key_down(int keycode);
   };
 }
+
+#endif // INPUT_H

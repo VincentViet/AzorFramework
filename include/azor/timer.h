@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TIMER_H
+#define TIMER_H
 
 namespace azor
 {
@@ -18,3 +19,5 @@ namespace azor
 		static void resume();
 	};
 }
+
+#endif // TIMER_H

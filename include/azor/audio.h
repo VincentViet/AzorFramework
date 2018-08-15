@@ -1,4 +1,6 @@
-#pragma once
+#ifndef AUDIO_H
+#define AUDIO_H
+
 #include <string>
 #include <map>
 
@@ -23,3 +25,5 @@ namespace azor
 		static void stop_all_sounds();
 	};
 }
+
+#endif // AUDIO_H

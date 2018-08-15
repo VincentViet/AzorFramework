@@ -1,16 +1,18 @@
-#pragma once
+#ifndef GAME_H
+#define GAME_H
+
 #include <GLFW/glfw3.h>
 #include <string>
 namespace azor
 {
   class Game
   {	  
+	  int client_width_;
+	  int client_height_;
   private:
 	  bool initialize_app();
   protected:
 	  GLFWwindow * window_{};
-	  int client_width_;
-	  int client_height_;
 	  std::string client_title_;
 
   protected:
@@ -21,6 +23,8 @@ namespace azor
 	  virtual void clean_up();
 
   public:
+	  static int window_width;
+	  static int window_height;
 	  explicit Game(int width, int height, std::string title);
     virtual ~Game() = default;
 
@@ -28,3 +32,5 @@ namespace azor
 	  int run();
   };
 }
+
+#endif // GAME_H
